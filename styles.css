@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cebu {
+  background-color: yellow;
+  color: blue;
+}
+
+.philippine {
+  background-color: red;
+  color: blue;
+}
+
+.klm {
+  background-color: white;
+  color: blue;
+}
+
+.cebu-img {
+  width: 300px;
+  height: 200px;
+  background-image: url(img/cebu-airplane.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 40px;
+}
+
+.phil-img {
+  width: 300px;
+  height: 200px;
+  background-image: url(img/phil-airplane.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 40px;
+}
+
+.klm-img {
+  width: 300px;
+  height: 200px;
+  background-image: url(img/klm.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 40px;
+}
+
+p {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+h1 {
+  margin-top: 30px;
+}
