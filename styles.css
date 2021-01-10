@@ -77,8 +77,13 @@ a {
 p {
   margin-top: 30px;
   margin-bottom: 0px;
-  margin-left: 200px;
-  margin-right: 200px;
+  width: 60%;
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    width: 90%;
+  }
 }
 
 h1 {
