@@ -1,1 +1,1 @@
-<?php include_once(“cebu.html”); ?>
+<?php header( ‘Location: cebu.html’ ) ; ?>
