@@ -1,1 +1,1 @@
-<?php include_once(“cebu.html”); ?>
+<?php include_once(“index.html”); ?>
