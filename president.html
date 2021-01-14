@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>President</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="home button"><a href="index.html">Home</a></div>
+      <div class="cebu button"><a href="cebu.html">Cebu Pacific</a></div>
+      <div class="philippine button">
+        <a href="phil.html">Philippine Airlines</a>
+      </div>
+      <div class="klm button"><a href="klm.html">KLM</a></div>
+      <div class="president button"><a href="president.html">President</a></div>
+    </div>
+    <div class="main">
+      <div class="side-nav">
+        <button onclick="showPresident(1)">Emilio Aguinaldo</button>
+        <button onclick="showPresident(2)">Manuel L. Quezon</button>
+        <button onclick="showPresident(3)">José P. Laurel</button>
+        <button onclick="showPresident(4)">Sergio Osmeña Sr.</button>
+        <button onclick="showPresident(5)">Manuel A. Roxas</button>
+        <button onclick="showPresident(6)">Elpidio Quirino</button>
+        <button onclick="showPresident(7)">Ramon Magsaysay</button>
+        <button onclick="showPresident(8)">Carlos P. Garcia</button>
+        <button onclick="showPresident(9)">Diosdado P. Macapagal</button>
+        <button onclick="showPresident(10)">Ferdinand Marcos</button>
+        <button onclick="showPresident(11)">Corazon Aquino</button>
+        <button onclick="showPresident(12)">Fidel V. Ramos</button>
+        <button onclick="showPresident(13)">Joseph Estrada</button>
+        <button onclick="showPresident(14)">Gloria Macapagal Arroyo</button>
+        <button onclick="showPresident(15)">Benigno Aquino III</button>
+        <button onclick="showPresident(16)">Rodrigo Duterte</button>
+      </div>
+      <div class="content">
+        <div class="title-container">
+          <h1 id="title">Emilio Aguinaldo</h1>
+        </div>
+        <div class="img-container">
+          <div id="pres-image" class="pres-1-img"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function showPresident(num) {
+      const presidents = {
+        1: "Emilio Aguinaldo",
+        2: "Manuel L. Quezon",
+        3: "José P. Laurel",
+        4: "Sergio Osmeña Sr.",
+        5: "Manuel A. Roxas",
+        6: "Elpidio Quirino",
+        7: "Ramon Magsaysay",
+        8: "Carlos P. Garcia ",
+        9: "Diosdado P. Macapagal",
+        10: "Ferdinand Marcos",
+        11: "Corazon Aquino",
+        12: "Fidel V. Ramos",
+        13: "Joseph Estrada",
+        14: "Gloria Macapagal Arroyo",
+        15: "Benigno Aquino III",
+        16: "Rodrigo Duterte",
+      };
+      console.log(presidents[num]);
+      document.getElementById("title").innerHTML = presidents[num];
+      document.getElementById("pres-image").className = `pres-${num}-img`;
+    }
+  </script>
+</html>

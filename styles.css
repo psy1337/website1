@@ -6,13 +6,43 @@
 body {
   background-color: grey;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 
 .nav {
   display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.main {
+  display: flex;
+  flex: 0 0 100%;
+  align-self: stretch;
+}
+
+.side-nav {
+  flex: 0 0 auto;
+  background-color: green;
+  flex-direction: column;
+  padding: 10px;
+}
+
+button {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.content {
+  background-color: honeydew;
+  flex: 1 0 auto;
+  flex-direction: column;
+  align-items: center;
 }
 
 .button {
@@ -25,11 +55,18 @@ body {
   padding-right: 10px;
   margin: 5px;
   border-radius: 5px;
+  cursor: pointer;
+  background-color: gray;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.home {
+  background-color: blue;
+  color: brown;
 }
 
 .cebu {
@@ -45,6 +82,21 @@ a {
 .klm {
   background-color: white;
   color: blue;
+}
+
+.president {
+  background-color: pink;
+  color: brown;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
 }
 
 .cebu-img {
@@ -68,7 +120,160 @@ a {
 .klm-img {
   width: 300px;
   height: 200px;
-  background-image: url(img/klm.jpeg);
+  background-image: url(img/klm.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 40px;
+}
+
+.zai-img {
+  width: 300px;
+  height: 900px;
+  background-image: url(img/zai.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 40px;
+}
+
+.pres-1-img {
+  width: 300px;
+  height: 900px;
+  background-image: url(img/pres-1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 40px;
+}
+
+.pres-2-img {
+  width: 300px;
+  height: 900px;
+  background-image: url(img/pres-2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 40px;
+}
+
+.pres-3-img {
+  width: 300px;
+  height: 900px;
+  background-image: url(img/pres-3.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 40px;
+}
+
+.pres-4-img {
+  width: 300px;
+  height: 900px;
+  background-image: url(img/pres-4.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 40px;
+}
+
+.pres-5-img {
+  width: 300px;
+  height: 900px;
+  background-image: url(img/pres-5.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 40px;
+}
+
+.pres-6-img {
+  width: 300px;
+  height: 900px;
+  background-image: url(img/pres-6.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 40px;
+}
+
+.pres-7-img {
+  width: 300px;
+  height: 900px;
+  background-image: url(img/pres-7.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 40px;
+}
+
+.pres-8-img {
+  width: 300px;
+  height: 900px;
+  background-image: url(img/pres-8.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 40px;
+}
+
+.pres-9-img {
+  width: 300px;
+  height: 900px;
+  background-image: url(img/pres-9.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 40px;
+}
+
+.pres-10-img {
+  width: 300px;
+  height: 900px;
+  background-image: url(img/pres-10.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 40px;
+}
+
+.pres-11-img {
+  width: 300px;
+  height: 900px;
+  background-image: url(img/pres-11.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 40px;
+}
+
+.pres-12-img {
+  width: 300px;
+  height: 900px;
+  background-image: url(img/pres-12.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 40px;
+}
+
+.pres-13-img {
+  width: 300px;
+  height: 900px;
+  background-image: url(img/pres-13.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 40px;
+}
+
+.pres-14-img {
+  width: 300px;
+  height: 900px;
+  background-image: url(img/pres-14.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 40px;
+}
+
+.pres-15-img {
+  width: 300px;
+  height: 900px;
+  background-image: url(img/pres-15.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 40px;
+}
+
+.pres-16-img {
+  width: 300px;
+  height: 900px;
+  background-image: url(img/pres-16.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   margin: 40px;
