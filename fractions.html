@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Zaijan's Website</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="home button"><a href="index.html">Home</a></div>
+      <div class="cebu button"><a href="cebu.html">Cebu Pacific</a></div>
+      <div class="philippine button">
+        <a href="phil.html">Philippine Airlines</a>
+      </div>
+      <div class="klm button"><a href="klm.html">KLM</a></div>
+      <div class="president button"><a href="president.html">President</a></div>
+    </div>
+    <h1>Fractions</h1>
+    <p id="fraction-text">
+      Write an improper fraction and click the button to convert it to a mixed
+      fraction
+    </p>
+    <form id="fraction-form">
+      <div class="form-group">
+        <label for="num">Numerator:</label>
+        <input name="num" type="text" required />
+      </div>
+      <div id="form-line"><span>_</span></div>
+      <div class="form-group">
+        <label for="den">Denominator:</label>
+        <input name="den" type="text" required />
+      </div>
+
+      <button id="fraction-button" type="submit">Convert to Mixed</button>
+    </form>
+    <div class="result-container">
+      <span id="holenumber"></span>
+      <div id="fraction-container">
+        <span id="num"></span>
+        <span id="fraction-line"></span>
+        <span id="den"></span>
+      </div>
+    </div>
+  </body>
+  <script>
+    window.addEventListener("load", function () {
+      const form = document.getElementById("fraction-form")
+      form.addEventListener("submit", function (event) {
+        event.preventDefault()
+        const data = new FormData(form)
+        const values = [...data.values()]
+        console.log(values)
+        convertToMixedFraction(values[0], values[1])
+      })
+    })
+    function convertToMixedFraction(num, den) {
+      if (num < den) {
+        // { value: nil, error: "Not an improper fraction" }
+      }
+
+      const holeNumber = Math.floor(num / den)
+      let leftOver = num - holeNumber * den
+      let line = "_"
+      //{ value: { holeNumber, den, num: leftOver }, error: nil }
+      if (leftOver == 0) {
+        leftOver = ""
+        den = ""
+        line = ""
+      }
+      console.log(`holenumber: ${holeNumber}, num: ${leftOver}, den: ${den}`)
+      document.getElementById(`holenumber`).innerHTML = holeNumber
+      document.getElementById(`num`).innerHTML = leftOver
+      document.getElementById(`fraction-line`).innerHTML = line
+      document.getElementById(`den`).innerHTML = den
+    }
+  </script>
+</html>

@@ -292,5 +292,70 @@ p {
 }
 
 h1 {
-  margin-top: 30px;
+  margin: 30px 0;
+}
+
+#fraction-text {
+  margin-bottom: 20px;
+
+  text-align: center;
+}
+
+#fraction-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  z-index: 5;
+}
+
+#form-line {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 42px;
+  margin-top: -35px;
+  padding-right: 2px;
+}
+
+input {
+  width: 20px;
+  margin-left: 10px;
+}
+
+#fraction-button {
+  margin-top: 20px;
+  width: auto;
+}
+
+.result-container {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  font-size: 22px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+#fraction-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#holenumber {
+  margin-right: 5px;
+  margin-top: 3px;
+}
+
+#fraction-line {
+  margin-top: -22px;
+}
+
+#den {
+  margin-top: -3px;
 }
