@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Zaijan's Website</title>
+    <title>Fractions</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
@@ -15,6 +15,7 @@
       </div>
       <div class="klm button"><a href="klm.html">KLM</a></div>
       <div class="president button"><a href="president.html">President</a></div>
+      <div class="fractions button"><a href="fractions.html">Fractions</a></div>
     </div>
     <h1>Fractions</h1>
     <p id="fraction-text">
@@ -45,34 +46,34 @@
   </body>
   <script>
     window.addEventListener("load", function () {
-      const form = document.getElementById("fraction-form")
+      const form = document.getElementById("fraction-form");
       form.addEventListener("submit", function (event) {
-        event.preventDefault()
-        const data = new FormData(form)
-        const values = [...data.values()]
-        console.log(values)
-        convertToMixedFraction(values[0], values[1])
-      })
-    })
+        event.preventDefault();
+        const data = new FormData(form);
+        const values = [...data.values()];
+        console.log(values);
+        convertToMixedFraction(values[0], values[1]);
+      });
+    });
     function convertToMixedFraction(num, den) {
       if (num < den) {
         // { value: nil, error: "Not an improper fraction" }
       }
 
-      const holeNumber = Math.floor(num / den)
-      let leftOver = num - holeNumber * den
-      let line = "_"
+      const holeNumber = Math.floor(num / den);
+      let leftOver = num - holeNumber * den;
+      let line = "_";
       //{ value: { holeNumber, den, num: leftOver }, error: nil }
       if (leftOver == 0) {
-        leftOver = ""
-        den = ""
-        line = ""
+        leftOver = "";
+        den = "";
+        line = "";
       }
-      console.log(`holenumber: ${holeNumber}, num: ${leftOver}, den: ${den}`)
-      document.getElementById(`holenumber`).innerHTML = holeNumber
-      document.getElementById(`num`).innerHTML = leftOver
-      document.getElementById(`fraction-line`).innerHTML = line
-      document.getElementById(`den`).innerHTML = den
+      console.log(`holenumber: ${holeNumber}, num: ${leftOver}, den: ${den}`);
+      document.getElementById(`holenumber`).innerHTML = holeNumber;
+      document.getElementById(`num`).innerHTML = leftOver;
+      document.getElementById(`fraction-line`).innerHTML = line;
+      document.getElementById(`den`).innerHTML = den;
     }
   </script>
 </html>
